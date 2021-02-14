@@ -4,7 +4,6 @@ Design patterns are an essential part of software development. These solutions n
 
 Following are the design patterns I implemented in this lab 
  1. Builder
- 	- this is 
  2. Factory 
  3. Adapter 
  4. Proxy
