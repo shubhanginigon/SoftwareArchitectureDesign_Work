@@ -13,7 +13,7 @@ Design patterns are an essential part of software development. These solutions n
 ![alt](./img/dependency.PNG)
 
 ### Following are the 6 design pattern implemented in this project
-** 1. Builder**
+**1. Builder**
  	- Use builder when a long list of attributes have to be maintained. In this project @builder annotation is used to generate builder function and constructor for user.
 
 ![alt](./img/user.PNG)
@@ -26,7 +26,7 @@ Design patterns are an essential part of software development. These solutions n
    
 ![alt](./img/builderTest.PNG)
  	
-** 2. Factory** 
+**2. Factory** 
 	- When creation logic is complex and difficult to maintain then, create a interface that will handles all the creation in one place, and let the client calls that interface. That's Factory pattern. Here factory pattern is used for different roles of users. 
 	
 ![alt](./img/role.PNG)
@@ -47,12 +47,12 @@ Design patterns are an essential part of software development. These solutions n
 
 ![alt](./img/factoryTest.PNG)
 
-** 3. Adapter**
+**3. Adapter**
 	- Adapter allows two unrelated/uncommon interfaces to work together, without changing their existing code.
 Then use a single class (the adapter class) to join functionalities of independent or incompatible interfaces/classes.
 	Inside package adapter, create the two interfaces, LineFormattable.java and CsvFormattable.java
 
-![alt](./img/linef.PNG)
+![alt](./img/lineF.PNG)
 
  ![alt](./img/csvf.PNG)
 
@@ -72,7 +72,7 @@ Then use a single class (the adapter class) to join functionalities of independe
 
 ![alt](./img/adapterTest.PNG) 
 
-** 4. Proxy**
+**4. Proxy**
 	- Proxy is that surrogate object can implement additional logic without complicating the real object, for example, here, let’s implement some access logic into our CommandAccess object and create the concrete class CommandAccessImpl.java
 	
 ![alt](./img/commandaccess.PNG)
@@ -87,7 +87,7 @@ Then use a single class (the adapter class) to join functionalities of independe
    
 ![alt](./img/proxymain.PNG)   
 
-** 5. Decorator** 
+**5. Decorator** 
 	- Decorator can be useful for adding features without over using inheritance. First, create an abstract class of Character.java inside decorator model 
 
 ![alt](./img/charac.PNG)
@@ -111,7 +111,7 @@ Then use a single class (the adapter class) to join functionalities of independe
 ![alt](./img/decoratorTest.PNG) 
 
 
-** 6. State**
+**6. State**
 	- State pattern is useful when maintaining an entity contains multiple transitions between states
  First, create an interface State.java to impose the rule
  
