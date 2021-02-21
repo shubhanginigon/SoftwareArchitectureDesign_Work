@@ -58,7 +58,7 @@
 
 ![alt](./img/data.PNG)
 
-**Spring Security **
+**Spring Security**
 1. Create SecurityConfig.java extends WebSecurityConfigurerAdapter - this is the main file controlling authentication and authorization logic, as well as general configuration including password encoders
 
 
