@@ -38,13 +38,14 @@
 - Set is more efficient for handling many to many association, but otherwise, use List
  
 ![alt](./img/user.PNG)
+
 3. Create Role.java with @mappedBy for mapping the roles to user
 
 
 - *@mappedBy* = “roles” - The word “roles” refer to the object in the User.java.  mappedby tells JPA that it is already mapped, otherwise, you will get duplicate tables.  Another is whether to put on which side of the bidirectional relationship is not important as it only affects the naming of the table, but we usually put on the non-owning (child) side, here is the role side.
 - Also using @JoinTable we can specify the exact name you like, as well as the column name.
 
-![alt](./img/Role.PNG)
+![alt](./img/role.PNG)
 
 **Adding DAO**
 1. As we have two classes User.java and Role.java hence, we need two DAO UserJPADao.java and RoleJPADao.java
