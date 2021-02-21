@@ -65,6 +65,7 @@
 - We use BCryptPasswordEncoder().  By adding @Bean, it allows other classes to use it as @Autowired.  The difference between @Bean and @Component is that @Bean is method level while @Component is class level.
 
 ![alt](./img/securityConfig.PNG)
+
  2. MyUserDetailsService is a UserDetailsService interface implementation which provides service access to user details
 
 ![alt](./img/userDetailsS.PNG)
@@ -106,7 +107,7 @@ ${spring} variable ties to application.properties
 
 3. Add messages in messages.properties
 
-![alt](./img/messages.PNG)
+![alt](./img/message.PNG)
 
 **Add Controller**
 1. Create UserController.java 
