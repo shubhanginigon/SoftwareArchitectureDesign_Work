@@ -124,7 +124,7 @@ I have created this application with two approaches
 
 >## Output 
 
-> - Home 
+> - Homepage
 
 ![alt](./img/homepage.PNG)
 
