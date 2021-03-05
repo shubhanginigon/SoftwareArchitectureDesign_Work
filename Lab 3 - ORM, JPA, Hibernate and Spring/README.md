@@ -47,11 +47,11 @@ Setup for level 2 caching
 it starts writing data into the file system. We use this property to define 
 the location where EHCache will write the overflown data.
 
->- defaultCache: It’s a mandatory configuration, it is used when an Object 
+>- defaultCache: Itâ€™s a mandatory configuration, it is used when an Object 
 need to be cached and there are no caching regions defined for that.  For example, timeToLiveSeconds was set to 10, meaning that things will be kept in cache for 10 seconds. 
 
->- cache name=”employee”: We can cache element to define the region (e.g.,
-@Cache(usage....., region = "employee") and it’s 
+>- cache name=â€employeeâ€: We can cache element to define the region (e.g.,
+@Cache(usage....., region = "employee") and itâ€™s 
 configurations. We can define multiple regions and their properties, 
 while defining model beans cache properties, we can also define region 
 with caching strategies. The cache properties are easy to understand 
@@ -74,7 +74,7 @@ Create the Models
 
 >> ![user.java](./img/user.PNG)
 
-- let’s create Address.java
+- letâ€™s create Address.java
 >- The same cache annotations on top
 
 >- EmbeddedId: Here we are using a composite primary key, which the attributes are defined in a separate entity called AddressId.   Any attributes inside EmbeddedId will be inserted into the same table as Address
@@ -83,14 +83,14 @@ Create the Models
 
 >> ![address.java](./img/address.PNG)
 
-- Let’s create AddressId.java
+- Letâ€™s create AddressId.java
 >- To tell spring that this is a embeddable id on the inverse side, you put @Embeddable
 
 >- Any composite key requires implementing Serializable, since when you load Address, you have to make all referenced objects serializable, i.e., allow these objects to decompose into bytes for effective transfer. 
 
 >> ![addressId.java](./img/addressId.PNG)
 
--Let’s create Leave.java, which is a parent of SickLeave.java and AnnualLeave.java.  This will help implement inheritance strategy
+-Letâ€™s create Leave.java, which is a parent of SickLeave.java and AnnualLeave.java.  This will help implement inheritance strategy
 >- @Inheritance using Single_Table strategy, which means that any child attributes shall be put into a single table along with the parent attributes.  Make sure you have only one @Id only at the parent side
 
 >- @DiscriminatorColumn which defines the name of the table column which helps discriminate between childs.  
@@ -105,7 +105,7 @@ Create the Models
 
 >> ![leave.java](./img/leave.PNG)
 
-- Let’s implement SickLeave.java
+- Letâ€™s implement SickLeave.java
 >- @DiscriminatorValue is used to set the value of the column when this entity is created.  By default, it uses the class name
 
 >> ![sickLeave.java](./img/sickLeave.PNG)
@@ -120,7 +120,7 @@ Create the Models
 >> ![LeaveType.java](./img/leaveType.PNG)
 
 - Create Benefit.java model
->- it’s a ManyToMany relationship, using Set is much better
+>- itâ€™s a ManyToMany relationship, using Set is much better
 
 >- the mappedBy is here, it means we inform hibernate that Employee will be the owning side, and thus the resulting intermediate table will be EMPLOYEE_BENEFITS instead of BENEFITS_EMPLOYEE (trivial for those who want to know)
 
@@ -128,7 +128,7 @@ Create the Models
 
 >> ![benefit.java](./img/benefit.PNG)
 
-- let’s make the Name.java.  To make employee name elegant, we shall create an @Embeddable Name, containing fname, lname, and mname
+- letâ€™s make the Name.java.  To make employee name elegant, we shall create an @Embeddable Name, containing fname, lname, and mname
 
 >> ![name.java](./img/name.PNG)
 
@@ -185,7 +185,7 @@ Create Security package
 
 - Last create UserDetailsImpl.java
 
->> ![userDetailsImpl.java](./img/userIm.PNG)
+>> ![userDetailsImpl.java](./img/userImp.PNG)
 
 Create tests file inside service package
 
