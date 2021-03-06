@@ -35,9 +35,17 @@ Not loaded require query.
 <b>Answer 2:</b>
 
 
+ 3. Research and discuss the difference between cascade.REMOVE and orphanRemoval=true (use your own words)
 
-3. Research and discuss the difference between cascade.REMOVE and orphanRemoval=true (use your own words)
+<b>Answer 3:</b>
+- CascadeType.REMOVE is a way to delete a child entity or entities whenever the deletion of its parent happens. For example, here if the user is deleted then as CascadeType.Remove is used for address, all the address realted to that user will be deleted.
+- orphanRemoval=true means delete orphaned entities from the database. An entity that is no longer attached to its parent is the definition of being an orphan. 
+
  4. Remove lazy load from addresses and benefits, run the testFetch function. What happens?  Document your findings.
+
+<b>Answer 4:</b>
+- 
+
  5. Remove cascade = cascadeType.ALL and orphanRemoval = true from benefits and addresses, run the testCascadeRemove and testCascadePersist function.  What happens?  Document your findings.
  6. Attempt to remove @Transactional from any of the methods defined in the TestService.java.  There are some errors.  Explain why such an error happens.
  7. Coding: Transform my main program test into unit test
