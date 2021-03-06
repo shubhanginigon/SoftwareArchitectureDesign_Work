@@ -44,6 +44,7 @@ Not loaded require query.
  4. Remove lazy load from addresses and benefits, run the testFetch function. What happens?  Document your findings.
 
 <b>Answer 4:</b>
+
 - 
 
  5. Remove cascade = cascadeType.ALL and orphanRemoval = true from benefits and addresses, run the testCascadeRemove and testCascadePersist function.  What happens?  Document your findings.
