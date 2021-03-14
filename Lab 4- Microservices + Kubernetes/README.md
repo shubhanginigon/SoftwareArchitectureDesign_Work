@@ -35,8 +35,8 @@ Create Controllers
 - create controller NotesController.java which has method to retrieve all notes, method for saving notes, route for invoking the get and save method.
 - In method getAllNotes(Model model) the reverse method is for showing the most recent one first
 
->> ![NotesController.java](./img/notesCon1.PNG)
->> ![NotesController.java](./img/notesCon2.PNG)
+>> ![NotesController.java](./img/NotesCon1.PNG)
+>> ![NotesController.java](./img/NotesCon2.PNG)
 
 Create Views
 
@@ -88,7 +88,7 @@ Create Docker Container
   
 -Type docker images to list all docker images.  You should see the note-java image that you just built.    You can also see hello-world which is automatically downloaded when you first do docker run hello-world
 
->> ![Docker images](./img/docimages.PNG)
+>> ![Docker images](./img/docimages.png)
 
 - To run the docker image, run command <i> docker run --name=note-java -p 8080:8080 note-java </i>    Note the following about this command:
 --name defines the name for the container
