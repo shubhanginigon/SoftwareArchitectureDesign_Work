@@ -88,7 +88,7 @@ Create Docker Container
   
 -Type docker images to list all docker images.  You should see the note-java image that you just built.    You can also see hello-world which is automatically downloaded when you first do docker run hello-world
 
->> ![Docker iamges](./img/docimages.PNG)
+>> ![Docker images](./img/docimages.PNG)
 
 - To run the docker image, run command <i> docker run --name=note-java -p 8080:8080 note-java </i>    Note the following about this command:
 --name defines the name for the container
@@ -154,7 +154,7 @@ kube/note.yaml
 - If the not running, do <i>minikube start</i>
 - apply the resource definition with the following command  <i>kubectl apply -f kube</i>   The command submits all the YAML files in the kube directory to Kubernetes, and will create Pods.  Check that the pods are created successfully by <i>kubectl get pods</i>
 
->> ![kubectl apply](./img/kubelect_apply.PNG)
+>> ![kubectl apply](./img/kublect_apply.PNG)
 
 - Also check <i>kubectl get svc</i> for svc services
 
