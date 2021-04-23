@@ -1,6 +1,6 @@
 ># Spring Session
 
-In this application using HttpSession to achieve Session management. Also, using Spring Session JDBC to store spring session information. By default Apache Tomcat stores HTTP session objects in memory.  Instead of memory, we will be using DB session state.
+- In this application using HttpSession to achieve Session management. Also, using Spring Session JDBC to store spring session information. By default Apache Tomcat stores HTTP session objects in memory.  Instead of memory, we will be using DB session state.
 
 >># Prerequisites
 
